@@ -1,0 +1,62 @@
+extends layout
+
+block main
+  .content-wrapper
+    header.top
+     .wrapper
+        - if (everyauth.loggedIn)
+          .account
+            - var user= everyauth.facebook.user
+            - var photo= everyauth.facebook ? "http://graph.facebook.com/"+user.id+"/picture?type=small" : ""
+            img(height="20", src="#{photo}")
+            p #{user.name}
+
+        p.title Feria Local | Medell&iacute;n
+        .top-menu
+          ul
+            li
+              a#que-es-btn(href='#')
+            li
+              a#share-btn(href='#')
+            li
+              a#plus-btn(href='#')
+    .content
+      section#que-es(style='display:none;')
+        a.close(href='#') cerrar
+        header
+          ¿Qu&eacute; es esto?
+        p
+          | Este proyecto es un acercamiento a una de las posibles respuestas a la pregunta por lo colaborativo, por lo local acá en Medellín. Ese ¿Cómo es? ¿Cómo ser? ¿Cómo lograrlo?
+          |  En el mundo el tema del localismo es una tendencia en caliente que ha generado muchas iniciativas alrededor de lo colaborativo en la web. Esto se ha dado, entre otras cosas, gracias a la posibilidad de interacción peer to peer que permite internet, lo que ha generado el afianzamiento de los lazos entre las co- munidades y el acortamiento del camino entre los generadores de bienes/servicios y los usuarios.
+
+      section#front
+        .categories-wrapper
+          section#categories
+            header
+              p Categor&iacute;as
+            ul
+              -each cat in categories
+                li
+                  .category-item                    
+                    a(href="#!/c/#{cat.toLowerCase().replace(/\s/g,'-')}") #{cat}
+                    span &nbsp;
+        .listings-wrapper
+          // offering listings
+          section#shops
+            header
+              p Marcas, servicios, emprendimientos ya registrados
+            ul
+      section#shop(style='display:none;')
+        a#back(href='') <--- Volver al directorio
+        .info-wrapper            
+
+        .comments-wrapper
+          section#comments
+            header
+              h3 Comentarios
+              p Siempre hay algo que decir!
+            textarea(name='comment', rows='3')
+            a#post-comment(href='#') Comentar
+            ul
+
+Lo que se pretende con este website es comenzar a indexar la producción local (de todo tipo) y tenerla a la mano para encontrar dónde, quién y cómo se está produciendo en la ciudad y comenzar a trabajar sobre esa información, proporcionando espacios dentro de la misma página para contribuir con el desarrollo de lazos de trabajo colaborativo para llevar a cabo proyectos en el futuro. Y lo más importante de todo... ir entendiendo poco a poco, que nosotros podemos hacer cualquier cosa, desde un alfiler hasta un carro de fórmula 1, la gente está ahí, el conocimiento está ahí (en internet), la plata, no importa, hay capital humano.

@@ -1,0 +1,96 @@
+!!! 5
+html
+  head
+    link(rel= 'stylesheet', href= '/stylesheets/css3.css', type= 'text/css')
+    link(rel= 'stylesheet', href= '/styles.css', type= 'text/css')
+    link(rel= 'stylesheet', href= 'http://openlayers.org/dev/theme/default/style.css', type= 'text/css')
+    link(rel= 'stylesheet', href= 'http://openlayers.org/dev/theme/default/google.css', type= 'text/css')
+    link(rel= 'stylesheet', href= '/stylesheets/jquery.jgrowl.css', type= 'text/css')
+    script(src="http://maps.google.com/maps/api/js?v=3.5&amp;sensor=false")
+    title ferialocal / Medell&iacute;n
+  body
+    section#login(style='display:none;')
+      header
+        span &nbsp;
+        p Con&eacute;ctate!
+      ul
+        li
+          a#fb(href='/auth/facebook')
+        li
+          a#gg(href='#')
+        li
+          a#tt(href='#')
+    section#publish(style='display:none;')
+      a.close(href='#') cerrar
+      header
+        span &nbsp;
+        p Publica tu oferta
+      .logo
+      span
+        a#addlogo.upload(href='#')
+        input#upload(type="file", multiple="multiple")
+      .select-category
+        select(name='category')
+          option(value="") -- Selecciona una Categor&iacute;a --
+          -each cat in categories
+            option(value="#{cat.toLowerCase().replace(/\s/g,'-')}") #{cat}
+      .image-upload(style='display:none;')
+        p.cancel-info Subiendo imagen ...
+        .meter
+          span(style='width: 25%')
+      .input.name
+        span Nombre
+        input(type='text', name='name')
+      .input.description
+        span Descripci&oacute;n
+        textarea(name='description', rows='5')
+      .input.author
+        span Autor
+        input(type='text', name='author')
+      .input.phone
+        span Tel&eacute;fono
+        input(type='text', name='phone')
+      .input.address
+        span Direcci&oacute;n
+        input(type='text', name='address')
+      .input.web
+        span Sitio Web
+        input(type='text', name='web')
+      .input.fb
+        span Facebook
+        input(type='text', name='fb')
+      .input.flickr
+        span Flickr
+        input(type='text', name='flickr')
+      .input.tumblr
+        span Tumblr
+        input(type='text', name='tumblr')
+      a#publish-btn(href='#')
+        p Publicar
+        span &nbsp;
+
+      ul
+        li
+          a#fb(href='#')
+        li
+          a#gg(href='#')
+        li
+          a#tt(href='#')
+    .root-wrapper
+      // .root-overlay(style='position:absolute;width:100%;height:100%;z-index:-1;background:#EEE')
+      block main
+    script(type="text/javascript", src="/javascripts/thirdparty/jquery/jquery-1.8.min.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/jquery.jgrowl_minimized.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/jquery.scrollTo.js")
+    script(type="text/javascript", src="http://cdn.jquerytools.org/1.2.7/tiny/jquery.tools.min.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/galleria/galleria-1.2.8.min.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/OpenLayers.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/underscore.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/backbone.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/infields.jquery.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/dust-core-1.0.0.js")
+    script(type="text/javascript", src="https://raw.github.com/mihaild/jquery-html5-upload/master/jquery.html5_upload.js")
+    script(type="text/javascript", src="/javascripts/compiled_tpls.js")
+    script(type="text/javascript", src="/javascripts/thirdparty/require.js", data-main="/javascripts/App.js")
+    script(type="text/javascript", src="/javascripts/forms.js")      
+

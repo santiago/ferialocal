@@ -1,0 +1,96 @@
+*{margin:0;padding:0}
+html,body,root-wrapper{height:100%}
+a{text-decoration:none}
+li{display:block}
+body{font-family:"Lucida Grande",Arial,Helvetica,Verdana,sans-serif;background-color:#fff}
+.ajaxloader{width:16px;height:16px;background:url("/images/ajax-loader.gif") 0 0 no-repeat}
+.content-wrapper{width:1040px;margin:0 auto;background-color:#fff}
+.content{float:left;width:100%;position:relative}
+header.top{background:#231f20;color:#fff;float:left;width:100%;}
+header.top p{float:left}
+header.top .wrapper{padding:10px 0;float:left;width:100%}
+header.top .title{margin-left:106px}
+section#front{width:830px;margin:0 auto;margin-top:40px}
+.categories-wrapper{float:left;width:300px}
+section header{color:#74a798;font-size:18px;border-bottom:1px dashed #d1d3d4;padding-bottom:3px}
+.listings-wrapper{float:right;width:515px}
+.category-item a{font-size:14px;color:#000;padding-left:10px}
+section#categories header{margin-bottom:10px}
+section#categories li{padding:6px 0;border-bottom:1px solid #d1d3d4;margin-bottom:10px;}
+section#categories li.on{background-color:#eee;}
+section#categories li.on span{background:url("/images/Sprite-.png") -230px -16px no-repeat;width:14px;height:20px;float:right}
+.top-menu{float:right;margin-right:106px;}
+.top-menu ul li{float:left;}
+.top-menu ul li a{background:url("/images/Sprite-.png") 0 0 no-repeat;float:left;width:50px;height:24px;}
+.top-menu ul li a#que-es-btn{background-position:-11px -151px;width:17px}
+.top-menu ul li a#share-btn{background-position:-35px -151px;width:44px;margin:0 5px}
+.top-menu ul li a#plus-btn{background-position:-86px -151px;width:22px}
+.error{font-size:11px;color:#f00}
+.shop-item{float:left;width:100%;margin-top:10px;border-bottom:1px solid #d1d3d4;padding-bottom:10px;}
+.shop-item a{padding-left:7px;color:#000;}
+.shop-item a:hover{text-decoration:underline}
+.shop-item p{font-size:14px}
+.shop-item .photo{float:left;width:62px;height:60px;background:url("/images/Sprite-.png") -39px -6px no-repeat;margin-top:2px}
+.shop-item .info{float:right;width:445px}
+.shop-item .description{font-size:13px;padding-left:70px}
+.account{float:left;margin-left:106px;}
+.account img{float:left;margin-right:5px}
+section#que-es{-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;border:1px solid #f2f4f4;padding:10px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);box-shadow:0 0 10px 0 rgba(0,0,0,0.5);background-color:rgba(0,0,0,0.7);position:absolute;color:#fff;width:600px;left:220px;top:40px;}
+section#que-es header{color:#74a798;font-size:18px;padding-bottom:5px;margin-bottom:5px}
+section#que-es a.close{color:#fff;font-size:12px;float:right;}
+section#que-es a.close:hover{text-decoration:underline}
+section#login{-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;border:1px solid #f2f4f4;padding:10px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);box-shadow:0 0 10px 0 rgba(0,0,0,0.5);background-color:rgba(0,0,0,0.7);position:absolute;z-index:11;top:55px;right:120px;}
+section#login header{padding-bottom:10px}
+section#login p{color:#27aae1}
+section#login a{background:url("/images/Sprite-.png") 0 0 no-repeat;float:left;height:68px;width:67px}
+section#login span{background:url("/images/Conectate-Icon.png") -11px -35px no-repeat;float:left;width:25px;height:25px;margin-right:5px}
+section#login ul{float:left;margin-top:10px}
+section#login li{float:left}
+section#login a#fb{background-position:-37px -67px}
+section#login a#gg{background-position:-111px -67px;margin:0 10px}
+section#login a#tt{background-position:-185px -67px}
+section#publish{z-index:11;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;border:1px solid #f2f4f4;padding:10px;-webkit-box-shadow:0 0 10px 0 rgba(0,0,0,0.5);box-shadow:0 0 10px 0 rgba(0,0,0,0.5);background-color:rgba(0,0,0,0.7);position:absolute;top:50px;right:120px;width:350px;}
+section#publish a.close{font-size:12px;color:#fff;float:right;}
+section#publish a.close:hover{text-decoration:underline}
+section#publish .name,section#publish .description,section#publish .author,section#publish .phone,section#publish .address,section#publish .web,section#publish .fb,section#publish .flickr,section#publish .tumblr{margin-top:10px;}
+section#publish .name textarea,section#publish .description textarea,section#publish .author textarea,section#publish .phone textarea,section#publish .address textarea,section#publish .web textarea,section#publish .fb textarea,section#publish .flickr textarea,section#publish .tumblr textarea,section#publish .name input,section#publish .description input,section#publish .author input,section#publish .phone input,section#publish .address input,section#publish .web input,section#publish .fb input,section#publish .flickr input,section#publish .tumblr input{border:1px solid #808285;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;font-size:13px;padding:5px 10px}
+section#publish .name input,section#publish .description input,section#publish .author input,section#publish .phone input,section#publish .address input,section#publish .web input,section#publish .fb input,section#publish .flickr input,section#publish .tumblr input{width:150px;}
+section#publish .name input[name='name'],section#publish .description input[name='name'],section#publish .author input[name='name'],section#publish .phone input[name='name'],section#publish .address input[name='name'],section#publish .web input[name='name'],section#publish .fb input[name='name'],section#publish .flickr input[name='name'],section#publish .tumblr input[name='name'],section#publish .name input[name='author'],section#publish .description input[name='author'],section#publish .author input[name='author'],section#publish .phone input[name='author'],section#publish .address input[name='author'],section#publish .web input[name='author'],section#publish .fb input[name='author'],section#publish .flickr input[name='author'],section#publish .tumblr input[name='author']{width:100%}
+section#publish .name,section#publish .author,section#publish .address,section#publish .fb,section#publish .tumblr{float:left}
+section#publish .phone,section#publish .web,section#publish .flickr{float:right}
+section#publish .description{float:left;width:94%;}
+section#publish .description textarea{width:100%}
+section#publish .name,section#publish .author{width:94%}
+section#publish header p{color:#dc5b5a}
+section#publish header span{float:left;width:23px;height:23px;background:url("/images/Sprite-.png") -86px -176px no-repeat}
+section#publish .select-category{margin-top:25px}
+section#publish .logo{width:60px;height:60px;float:left;background:url("/images/Sprite-.png") -39px -6px no-repeat;margin-top:10px}
+section#publish .upload{width:16px;height:25px;float:left;background:url("/images/Sprite-.png") -10px -208px no-repeat;margin-top:25px;margin-left:15px;margin-right:15px}
+section#publish #publish-btn{float:left;width:100%;color:#fff;margin-top:12px;border-top:1px solid #d1d3d4;padding-top:10px;}
+section#publish #publish-btn p{float:right;margin-right:10px;margin-top:8px;font-size:14px}
+section#publish #publish-btn span{background:url("/images/Sprite-.png") 0 0 no-repeat;margin-right:10px;float:right;width:36px;height:36px;background-position:-79px -203px}
+section#publish #publish-btn:hover span{background-position:-79px -239px}
+section#publish #publish-btn:hover p{text-decoration:underline}
+section#shop{width:830px;margin:0 auto;margin-top:40px;}
+section#shop #back{position:absolute;right:106px;top:15px;font-size:14px;font-style:italic;color:#808285;}
+section#shop #back:hover{text-decoration:underline}
+section#shop .info-wrapper{float:left;width:300px}
+section#shop .comments-wrapper{float:right;width:515px}
+section#shop .info .name,section#shop .info .cat{color:#74a798}
+section#shop .info .name{font-size:18px}
+section#shop .info .cat{font-size:14px}
+section#shop .info .author{font-size:12px}
+section#shop .info .phone{font-size:12px}
+section#shop .info .address{font-size:12px}
+section#shop .info .description{font-size:13px;border-top:1px solid #d1d3d4;border-bottom:1px solid #d1d3d4;margin-top:5px;padding-bottom:5px;padding-top:5px;font-size:13px}
+section#shop .info a.website,section#shop .info a.fb,section#shop .info a.flickr{font-size:11px;color:#00f;display:block;padding:5px 0}
+section#comments header h3{font-size:18px;font-weight:normal}
+section#comments header p{font-size:14px}
+section#comments textarea{width:96%;margin-top:10px;-moz-border-radius-topleft:9px;-webkit-border-top-left-radius:9px;border-top-left-radius:9px;-moz-border-radius-topright:9px;-webkit-border-top-right-radius:9px;border-top-right-radius:9px;-moz-border-radius-bottomleft:9px;-webkit-border-bottom-left-radius:9px;border-bottom-left-radius:9px;-moz-border-radius-bottomright:9px;-webkit-border-bottom-right-radius:9px;border-bottom-right-radius:9px;border:1px solid #808285;font-size:14px;padding:10px}
+section#comments a#post-comment{float:right;color:#74a798;font-size:14px;text-align:right}
+section#comments li{float:left;width:100%;margin:3px 0;border-bottom:1px solid #d1d3d4;padding-bottom:10px;padding-top:10px;}
+section#comments li.first{border-top:1px solid #d1d3d4}
+section#comments .comment-item .by{float:left;padding-left:10px;font-size:14px}
+section#comments .comment-item .by-photo{float:left}
+section#comments .comment-item .by-photo img{width:20px}
+section#comments .comment-item .comment{font-size:13px;float:left;clear:left;padding-left:30px}
